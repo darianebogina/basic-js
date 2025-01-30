@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function getCommonCharacterCount(s1, s2) {
   array1 = s1.split('');
   array2 = s2.split('');
-  count = 0;
+  let count = 0;
   for (let i = 0; i < s1.length; i += 1) {
       for (let j = 0; j < s2.length; j += 1){
         if (array1[i] === array2[j]) {
